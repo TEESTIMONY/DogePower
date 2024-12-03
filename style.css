@@ -131,14 +131,17 @@
 
 .home{
   display: flex;
-  background: 
+  background: linear-gradient(
+      rgba(20, 76, 116, 0.3),
+      rgba(20, 76, 116, 0.6)
+  ),
   url('ff.png'); /* Use the same background image from the first frame */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   padding-top: 100px;
   /* background-position: center; */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   z-index: 1;
 }
 
