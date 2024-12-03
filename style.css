@@ -141,7 +141,7 @@
   background-position: center;
   padding-top: 100px;
   /* background-position: center; */
-  z-index: 3;
+  z-index: 1;
 }
 
 .home .hero_text{
@@ -579,11 +579,7 @@
     border: 2px solid rgba(255, 255, 255, 0.4); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
   }
-  .narration-section {
-      padding: 30px 10px;
-      background-position: center;
-      background-attachment: scroll; /* Disable fixed background for better performance */
-  }
+  
 
   .narration-content {
       padding: 20px;
@@ -599,6 +595,34 @@
   .narration-content p {
       font-size: 0.9rem; /* Smaller paragraph font size */
       line-height: 1.4; /* Adjust line spacing for readability */
+  }
+
+  
+
+  .cta-container h2 {
+    font-size: 2rem; /* Adjust the heading size for smaller screens */
+  }
+
+  .cta-container p {
+    font-size: 1rem; /* Scale down the text */
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+
+  .social-buttons {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 15px; /* Reduce the gap between buttons */
+  }
+
+  .social-buttons a {
+    padding: 10px 20px; /* Reduce padding for smaller buttons */
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+
+  .social-buttons img {
+    width: 18px; /* Scale down the icons */
+    height: 18px;
+    margin-right: 8px; /* Adjust spacing */
   }
 }
 
