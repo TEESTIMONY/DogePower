@@ -330,6 +330,164 @@
 }
 
 
+.roadmap {
+  position: relative;
+  padding: 50px 20px;
+  background: linear-gradient(
+      rgba(20, 76, 116, 0.3),
+      rgba(20, 76, 116, 0.6)
+  ),
+  url('ff.png'); /* Use the same background image from the first frame */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.roadmap .roadmap-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(to bottom, #0D47A1, #1A237E); /* Subtle gradient matching theme */
+  color: #FFFFFF; /* White text for readability */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.roadmap h2 {
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  color: #FFC107; /* Golden Yellow to match tokenomics */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.roadmap-intro {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.roadmap-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.milestone {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #FFC107; /* Golden Yellow accent line */
+}
+
+.milestone h3 {
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 1.5rem;
+  color: #FFC107; /* Matches the section header */
+  margin-bottom: 10px;
+}
+
+.milestone p {
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cta-container {
+  text-align: center;
+  position: relative;
+  padding: 50px 20px;
+  background: linear-gradient(
+      rgba(20, 76, 116, 0.3),
+      rgba(20, 76, 116, 0.6)
+  ),
+  url('ff.png'); /* Use the same background image from the first frame */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+
+  
+}
+
+.cta-container h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #FFC107; 
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cta-container p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #1A73E8; /* Default blue for social buttons */
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-buttons a:hover {
+  background-color: #1565C0;
+}
+
+.social-buttons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.social-button.telegram {
+  background-color: #0088cc; /* Telegram Blue */
+}
+
+.social-button.telegram:hover {
+  background-color: #0077b5;
+}
+
+.social-button.twitter {
+  background-color: #1DA1F2; /* Twitter Blue */
+}
+
+.social-button.twitter:hover {
+  background-color: #0d95e8;
+}
+
+.social-button.dex {
+  background-color: #ff9800; /* DEX Button Orange */
+}
+
+.social-button.dex:hover {
+  background-color: #f57c00;
+}
 
 
 @keyframes fadeIn {
