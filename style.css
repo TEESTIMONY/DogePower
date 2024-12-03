@@ -490,6 +490,26 @@
   background-color: #f57c00;
 }
 
+.footer {
+  background-color: rgba(20, 76, 116, 0.95); /* Matches site theme */
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 2px solid #FFC107; /* Adds a golden accent line */
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-container span {
+  font-weight: bold;
+  color: #FFC107; /* Golden color for emphasis */
+}
+
 
 @keyframes fadeIn {
   from {
@@ -628,6 +648,19 @@
     width: 18px; /* Scale down the icons */
     height: 18px;
     margin-right: 8px; /* Adjust spacing */
+  }
+
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer-container p {
+    font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    line-height: 1.4;
+  }
+
+  .footer-container span {
+    font-size: 1rem; /* Ensure the highlight remains prominent */
   }
 }
 
