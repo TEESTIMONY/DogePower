@@ -22,7 +22,7 @@
     background: rgba(20, 76, 116, 0.85); 
     height: 100px;
     backdrop-filter: blur(5px);
-    z-index: 5;
+    z-index: 4;
   }
 
   .navbar.active {
@@ -168,7 +168,7 @@
 .home .video-container {
   width: 50%;
   height: 100%;
-  z-index: 4;
+  z-index: 3;
   animation: fadeIn 2s ease-out; /* Add a fade-in effect */
   display: flex;
   justify-content: center;
