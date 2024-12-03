@@ -20,7 +20,7 @@
     align-items: center;
     padding: 10px 20px;
     background: rgba(20, 76, 116, 0.85); 
-    height: 100px;
+    height: 80px;
     backdrop-filter: blur(5px);
     z-index: 4;
   }
@@ -456,9 +456,14 @@
 }
 
 .social-buttons img {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
+}
+
+
+.social-button.dex img{
+  border-radius: 50%;
 }
 
 .social-button.telegram {
