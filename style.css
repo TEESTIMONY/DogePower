@@ -22,7 +22,7 @@
     background: rgba(20, 76, 116, 0.85); 
     height: 100px;
     backdrop-filter: blur(5px);
-    z-index: 4;
+    z-index: 3;
   }
 
   .navbar.active {
@@ -168,7 +168,11 @@
 .home .video-container {
   width: 50%;
   height: 100%;
-  z-index: 3;
+  /* background: red; */
+  /* top: 200%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  z-index: 4;
   animation: fadeIn 2s ease-out; /* Add a fade-in effect */
   display: flex;
   justify-content: center;
@@ -497,6 +501,9 @@
   }
 }
 
+
+
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   body {
@@ -573,8 +580,8 @@
 
   .video-frame {
     width: 100%; /* Make video responsive */
-    border: 2px solid rgba(255, 255, 255, 0.3); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); 
+    border: 2px solid rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
   }
   .narration-section {
       padding: 30px 10px;
