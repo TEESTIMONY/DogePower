@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: rgba(20, 76, 116, 0.85); 
+
+  }
+
+
+  .navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(20, 76, 116, 0.85); 
+    height: 100px;
+    backdrop-filter: blur(5px);
+    z-index: 3;
+  }
+
+  .navbar.active {
+    text-align: left;
+  }
+
+  .navbar .play-button {
+    text-align: right;
+  }
+
+  .logo {
+    padding-top: 15px;
+    height: 190px; /* Adjust as needed */
+    width: auto;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+
+
+  .navbar .play-button {
+    padding: 10px 20px;
+    background: #e0e0e0;
+    color: #333;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .play-button:hover {
+    background: #d4d4d4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+  .menu-toggle {
+    display: none;
+    position: absolute; /* Position it at the top right */
+    top: 15px;
+    right: 20px;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links-mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 76, 116, 0.95);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.nav-links-mobile a {
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+/* Hamburger Menu Active State */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links-mobile.active {
+    display: flex;
+}
+  
+
+  .home{
+    display: flex;
+    background: url('ff.png');
+    background-size: cover;
+    padding-top: 100px;
+    /* background-position: center; */
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+
+ .home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 76, 116, 0.6);
+    z-index: -2;
+ }
+
+ .home .hero_text{
+    width: 50%;
+    max-width: 1000px;
+    font-family: "Protest Revolution", sans-serif;
+    text-align: center;
+    font-weight: 900;
+    justify-content: center;
+    font-size: 6rem;
+    padding: 0 2rem;
+    color: whitesmoke;
+    line-height: 1.2;
+    -webkit-text-stroke: 0.01px #c89b09; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for depth */
+    margin-top: 200px;
+ }
+
+ .home .hero_text h1 {
+    padding-left: 7rem;
+ }
+
+ .home .video-container {
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    /* top: 200%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    z-index: 4;
+    animation: fadeIn 2s ease-out; /* Add a fade-in effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-frame {
+    /* width: 50%; */
+    /* margin-left: -10rem;
+    height: 600px; */
+    border: 2.5px solid rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+
+
+}
+
+/* Section Background */
+.narration-section {
+  position: relative;
+  padding: 50px 20px;
+  background: linear-gradient(
+      rgba(20, 76, 116, 0.7),
+      rgba(20, 76, 116, 0.8)
+  ),
+  url('ff.png'); /* Use the same background image from the first frame */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds depth */
+  border-radius: 15px;
+}
+
+/* Narration Box Styling */
+.narration-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(to bottom, #0D47A1, #1A237E); /* Subtle gradient matching theme */
+  color: #FFFFFF; /* White text for readability */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.narration-content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFC107; /* Gold text */
+  text-shadow: 1px 1px 2px black; /* Black border effect */
+  margin-bottom: 20px;
+}
+
+/* Text Styling */
+.narration-content p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify; /* Neat alignment for the content */
+}
+
+/* Highlighted Text */
+.narration-content span {
+  color: #FFC107; /* Gold for emphasis */
+  font-weight: bold;
+}
+
+/* Add subtle animations */
+.narration-section {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .navbar .logo {
+    height: 100px; /* Reduce logo size */
+    padding-top: 0;
+  }
+
+  .navbar a {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .navbar .play-button {
+    margin-top: 10px; /* Add spacing between items */
+    padding: 8px 15px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none; /* Hide default links on mobile */
+  }
+
+  .play-button {
+    display: none; /* Hide join button on mobile */
+  }
+
+  .navbar {
+    height: 70px; /* Reduced navbar height */
+    padding: 10px;
+}
+
+  .logo {
+    height: 120px; /* Scale down logo for smaller screens */
+    margin:auto;
+  }
+
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px; /* Adjust padding for smaller screens */
+  }
+
+  .home .hero_text {
+    width: 90%;
+    font-size: 3rem; /* Reduce font size for headings */
+    line-height: 1.1;
+    margin-top: 100px; /* Adjust spacing */
+    padding: 0;
+  }
+
+  .home .hero_text h1 {
+    padding-left: 0; /* Remove extra padding */
+  }
+
+  .home .video-container {
+    width: 90%; /* Reduce video container size */
+    margin-top: 20px; /* Add spacing between text and video */
+  }
+
+  .video-frame {
+    width: 100%; /* Make video responsive */
+    border: 2px solid rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+  }
+  .narration-section {
+      padding: 30px 10px;
+      background-position: center;
+      background-attachment: scroll; /* Disable fixed background for better performance */
+  }
+
+  .narration-content {
+      padding: 20px;
+      max-width: 90%; /* Reduce width for smaller screens */
+      font-size: 0.9rem; /* Slightly smaller text */
+  }
+
+  .narration-content h2 {
+      font-size: 1.8rem; /* Scale down the title font size */
+      margin-bottom: 15px;
+  }
+
+  .narration-content p {
+      font-size: 0.9rem; /* Smaller paragraph font size */
+      line-height: 1.4; /* Adjust line spacing for readability */
+  }
+}
+
+/* Very Small Screens */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar .logo {
+    height: 80px; /* Further reduce logo size */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .home .hero_text {
+    font-size: 2.5rem; /* Further reduce font size */
+  }
+
+  .home .video-container {
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  .video-frame {
+    width: 100%; /* Ensure full width for small devices */
+  }
+
+  .narration-section {
+      padding: 20px 5px;
+  }
+
+  .narration-content {
+      padding: 15px;
+      font-size: 0.8rem;
+  }
+
+  .narration-content h2 {
+      font-size: 1.5rem;
+  }
+
+  .narration-content p {
+      font-size: 0.8rem;
+      line-height: 1.3;
+  }
+}
