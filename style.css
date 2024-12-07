@@ -676,6 +676,7 @@
     justify-content: center;
     margin-top: 15px;
     padding: 8px 5px; /* Adjust padding for smaller screens */
+    padding-left: 5px;
     font-size: 0.7rem; /* Reduce font size slightly */
   }
 
@@ -783,7 +784,6 @@
   .contract-container {
     font-size: 0.7rem; /* Further reduce font size for very small screens */
     justify-content: center;
-    padding-left: 0;
   }
 
   #contract-address{
