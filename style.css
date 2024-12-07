@@ -164,6 +164,40 @@
   padding-left: 7rem;
 }
 
+
+.contract-container {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background for container */
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif; /* Updated font for the contract address */
+  color: #fff;
+}
+
+.contract-container p {
+  margin: 0;
+  padding-right: 10px;
+  font-family: "Courier New", monospace;
+  color: #ffdf00; /* Gold for the contract address */
+}
+
+.contract-container button {
+  background-color: #007bff; /* Button color */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contract-container button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
 .home .video-container {
   width: 50%;
   height: 100%;
@@ -635,6 +669,31 @@
     border: 2px solid rgba(255, 255, 255, 0.4); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
   }
+
+  .contract-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 8px 5px; /* Adjust padding for smaller screens */
+    font-size: 0.7rem; /* Reduce font size slightly */
+  }
+
+  .contract-container p {
+      padding-right: 0; /* Remove right padding for stacked layout */
+      margin-bottom: 5px; /* Add spacing between address and button */
+      font-size: 0.85rem; /* Smaller text for address */
+  }
+
+  .contract-container button {
+      font-size: 0.8rem; /* Adjust button size for smaller screens */
+      padding: 6px 12px; /* Adjust button padding */
+  }
+
+  .hero_text {
+      font-size: 5rem; /* Scale down the header text */
+      padding: 0 1rem; /* Add some padding for better text spacing */
+  }
   
 
   .narration-content {
@@ -719,6 +778,25 @@
 
   .video-frame {
     width: 100%; /* Ensure full width for small devices */
+  }
+
+  .contract-container {
+    font-size: 0.7rem; /* Further reduce font size for very small screens */
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #contract-address{
+    padding-bottom: 5px;
+  }
+
+  .contract-container button {
+      padding: 5px 10px;
+      font-size: 0.75rem; /* Smaller button text */
+  }
+
+  .hero_text {
+      font-size: 4rem; /* Further scale down header text for very small screens */
   }
 
   .narration-section {
