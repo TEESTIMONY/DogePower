@@ -16,3 +16,15 @@ function copyContract() {
         console.error('Failed to copy: ', err);
     });
 }
+
+
+window.onload = function () {
+    const popup = document.getElementById("pinksale-popup");
+    popup.classList.add("active");
+};
+
+// Close the popup
+function closePopup() {
+    const popup = document.getElementById("pinksale-popup");
+    popup.classList.remove("active");
+}
