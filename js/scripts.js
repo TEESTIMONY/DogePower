@@ -23,8 +23,16 @@ window.onload = function () {
     popup.classList.add("active");
 };
 
-// Close the popup
+
+// Show Popup on Page Load
+window.onload = function () {
+    setTimeout(() => {
+        document.getElementById('launchPopup').classList.add('show');
+    }, 1000); // 1-second delay
+};
+
+// Close Popup
 function closePopup() {
-    const popup = document.getElementById("pinksale-popup");
-    popup.classList.remove("active");
+    document.getElementById('launchPopup').classList.remove('show');
 }
+
